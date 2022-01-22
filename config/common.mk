@@ -299,6 +299,13 @@ PRODUCT_PACKAGES += \
     Aperture \
     BlazeWallpaperStub
 
+# PocketMode
+PRODUCT_PACKAGES += \
+    PocketMode
+
+PRODUCT_COPY_FILES += \
+    vendor/blaze/pocket/privapp-permissions-pocketmode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-pocketmode.xml
+
 include vendor/blaze/config/ota.mk
 include vendor/blaze/config/pixel_props.mk
 include vendor/blaze/config/packages.mk
