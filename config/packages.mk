@@ -4,5 +4,6 @@ PRODUCT_PACKAGES += \
 
 ifneq ($(WITH_GAPPS),true)
 PRODUCT_PACKAGES += \
-    FOSSBrowser
+    FOSSBrowser \
+    Glimpse
 endif
