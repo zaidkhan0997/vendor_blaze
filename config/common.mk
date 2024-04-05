@@ -136,13 +136,6 @@ $(call inherit-product, vendor/gms/gms_full.mk)
 endif
 endif
 
-# Gboard side padding
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.ime.kb_pad_port_l=4 \
-    ro.com.google.ime.kb_pad_port_r=4 \
-    ro.com.google.ime.kb_pad_land_l=64 \
-    ro.com.google.ime.kb_pad_land_r=64
-
 # Google Photos Pixel Exclusive XML
 PRODUCT_COPY_FILES += \
     vendor/blaze/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
