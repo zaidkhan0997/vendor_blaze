@@ -268,6 +268,8 @@ PRODUCT_PACKAGES += \
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease \
+    Settings \
     SystemUI
 
 # Speed profile services and wifi-service to reduce RAM and storage
