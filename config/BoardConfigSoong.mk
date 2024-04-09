@@ -58,7 +58,8 @@ SOONG_CONFIG_blazeGlobalVars += \
     needs_camera_boottime \
     target_camera_package_name \
     camera_needs_client_info \
-    uses_nothing_camera
+    uses_nothing_camera \
+    uses_miui_camera
 
 SOONG_CONFIG_NAMESPACES += blazeNvidiaVars
 SOONG_CONFIG_blazeNvidiaVars += \
@@ -96,6 +97,7 @@ SOONG_CONFIG_blazeGlobalVars_target_camera_package_name := $(TARGET_CAMERA_PACKA
 SOONG_CONFIG_blazeGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 SOONG_CONFIG_blazeGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_blazeGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS)
+SOONG_CONFIG_blazeGlobalVars_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
