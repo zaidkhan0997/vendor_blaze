@@ -165,10 +165,9 @@ endif
 PRODUCT_PACKAGES += \
     BtHelper
 
-# Charger
+# Pixel offline charging animation
 PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
+    charger_res_images_vendor_pixel
 
 # Call Recording
 TARGET_CALL_RECORDING_SUPPORTED ?= true
