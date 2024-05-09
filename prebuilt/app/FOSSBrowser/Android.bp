@@ -1,0 +1,11 @@
+android_app_import{
+    name:"FOSSBrowser",
+    apk:"FOSSBrowser.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt:{
+        enabled: false,
+    },
+    product_specific: true,
+    overrides:["Browser2"],
+}
