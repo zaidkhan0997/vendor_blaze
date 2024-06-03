@@ -58,3 +58,14 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.blaze.device=$(BLAZE_BUILD) \
   org.blaze.version=$(BLAZEVERSION) \
   ro.blaze.maintainer=$(BLAZE_MAINTAINER)
+
+# Sign Build
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+ifneq (,$(wildcard vendor/blaze/signing/keys/releasekey.pk8))
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/blaze/signing/keys/releasekey
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.oem_unlock_supported=1
+endif
+ifneq (,$(wildcard vendor/blaze/signing/keys/otakey.x509.pem))
+PRODUCT_OTA_PUBLIC_KEYS := vendor/blaze/signing/keys/otakey.x509.pem
+endif
+endif
