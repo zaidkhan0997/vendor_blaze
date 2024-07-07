@@ -653,5 +653,10 @@
         <item>device_personalization_services/NowPlaying__on_demand_min_supported_aga_version=12.35.17</item>
         <item>device_personalization_services/NowPlaying__on_demand_retry_fingerprinter_install=true</item>
         <item>device_personalization_services/NowPlaying__youtube_export_enabled=true</item>
+
+        <!-- App Cloninig -->
+        <item>app_cloning/cloned_apps_enabled=true</item>
+        <item>app_cloning/delete_all_app_clones_enabled=true</item>
+        <item>app_cloning/enable_app_cloning_building_blocks=true</item>
     </string-array>
 </resources>
