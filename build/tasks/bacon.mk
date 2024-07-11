@@ -24,7 +24,7 @@ CL_CYN="\033[36m"
 CL_PRP="\033[35m"
 
 .PHONY: bacon
-bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
+bacon: $(DEFAULT_GOAL) $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(BLAZE_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(BLAZE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(BLAZE_TARGET_PACKAGE).sha256sum
 	$(hide) ./vendor/blaze/tools/generate_json_build_info.sh $(BLAZE_TARGET_PACKAGE)
