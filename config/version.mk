@@ -1,4 +1,4 @@
-# Copyright (C) 2022-2023 ProjectBlaze
+# Copyright (C) 2022-2024 ProjectBlaze
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
 # limitations under the License.
 
 ANDROID_VERSION := 14
-BLAZEVERSION := 3.6
+BLAZEVERSION := 3.7
 
 BLAZE_BUILD_TYPE ?= UNOFFICIAL
 BLAZE_MAINTAINER ?= UNKNOWN
