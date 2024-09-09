@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ANDROID_VERSION := 14
-BLAZEVERSION := 3.8-EOL
+ANDROID_VERSION := 15
+BLAZEVERSION := 4.0
 
 BLAZE_BUILD_TYPE ?= UNOFFICIAL
 BLAZE_MAINTAINER ?= UNKNOWN
