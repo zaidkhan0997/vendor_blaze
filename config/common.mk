@@ -119,10 +119,10 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
-# Gapps
-ifeq ($(WITH_GAPPS),true)
-$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
-$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+# Google Apps
+WITH_GMS ?= true
+ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/gms/products/gms.mk)
 endif
 
 # Google Photos Pixel Exclusive XML
